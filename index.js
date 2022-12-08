@@ -41,6 +41,7 @@ const compareGuess= () =>{
     else{
        userGuessUpdate.innerHTML = "HURRAY it's Correct 😎";
        userNumberUpdate.value="";
+        audio.play();
        startNewGame();
    }
 }else{
@@ -57,6 +58,7 @@ const compareGuess= () =>{
     else{
        userGuessUpdate.innerHTML = `HURRAY it's Correct 😎`;
        userNumberUpdate.value="";
+        audio.play();
        startNewGame();
    }
    document.getElementById("attempts").innerHTML=userGuess.length;
